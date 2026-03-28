@@ -19,4 +19,4 @@ jobs:
         java-version: '11'
 
     - name: Build and Run Tests
-      run: mvn test -DsuiteXmlFile=testng.xml
+      run: mvn clean run
