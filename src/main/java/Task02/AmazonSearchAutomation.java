@@ -6,21 +6,32 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class AmazonSearchAutomation {
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test 
+	public void amazonSearchTest() throws InterruptedException {
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+
+		WebDriver driver = new ChromeDriver(options);
+		
 		
 		//setup driver
 		WebDriverManager.chromedriver().setup();
 
 		//launch browser and maximize
-		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		//open website
