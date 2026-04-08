@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-28T23:24:22 IST" name="Test Suite" finished-at="2026-03-28T23:27:54 IST" duration-ms="211210">
+  <suite started-at="2026-04-08T21:16:47 IST" name="Default suite" finished-at="2026-04-08T21:17:03 IST" duration-ms="15478">
     <groups>
     </groups>
-    <test started-at="2026-03-28T23:24:22 IST" name="Sample Test" finished-at="2026-03-28T23:27:54 IST" duration-ms="211210">
+    <test started-at="2026-04-08T21:16:47 IST" name="Default test" finished-at="2026-04-08T21:17:03 IST" duration-ms="15478">
       <class name="Task02.AmazonSearchAutomation">
-        <test-method signature="amazonSearchTest()[pri:0, instance:Task02.AmazonSearchAutomation@76505305]" started-at="2026-03-28T23:24:23 IST" name="amazonSearchTest" finished-at="2026-03-28T23:27:54 IST" duration-ms="211126" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Task02.AmazonSearchAutomation@175c2241]" started-at="2026-04-08T21:16:48 IST" name="setup" finished-at="2026-04-08T21:16:51 IST" duration-ms="3923" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- amazonSearchTest -->
+        </test-method> <!-- setup -->
+        <test-method signature="searchAutomation()[pri:0, instance:Task02.AmazonSearchAutomation@175c2241]" started-at="2026-04-08T21:16:51 IST" name="searchAutomation" finished-at="2026-04-08T21:17:02 IST" duration-ms="10996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAutomation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Task02.AmazonSearchAutomation@175c2241]" started-at="2026-04-08T21:17:02 IST" name="tearDown" finished-at="2026-04-08T21:17:03 IST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Task02.AmazonSearchAutomation -->
-    </test> <!-- Sample Test -->
-  </suite> <!-- Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
